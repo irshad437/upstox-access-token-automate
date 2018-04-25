@@ -1,4 +1,4 @@
-# phantomMagicUpstox
+# Upstox access token automate
 Automate the process of generating access token for Upstox api using phantomJS.
 
 NOTE: It doesn't open any browser. So, you can execute this script in CLI.
