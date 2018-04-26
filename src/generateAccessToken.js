@@ -33,7 +33,10 @@ page.open(upstox_login_url, function(status) {
 
                 // Step 7: Terminate the script after 'Accept' button has been clicked
                 page.onLoadFinished = function() {
-                    console.log('Access token generated successfully! Terminating...');
+                    page.render("after_accept.png");
+                    console.log('Successfully redirected to: '+page.url);
+                    console.log('Note: Make sure you are handling the login code on redirect uri.');
+                    console.log('Terminating...');
                     phantom.exit();
                 };
 
